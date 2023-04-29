@@ -10,11 +10,15 @@
 }
 div {
     background-color: black;
-    border-radius: 40px;
+    border-radius: 50px;
     width: 1626px;
     transition: all 0.5s ease-in-out;
 }
 div:hover {
     width: 1951px;
     background-color: tomato;
+}
+h1 {
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
 }
