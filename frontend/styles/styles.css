@@ -1,11 +1,20 @@
 .joonilove {
     color: green;
-    font-size: 400px;
+    font-size: 250px;
     text-decoration: none;
     transition: all 0.5s ease-in-out;
 }
 .joonilove:hover{
     color: blue;
-    font-size: 500px;
-    transform: ;
+    font-size: 300px;
+}
+div {
+    background-color: black;
+    border-radius: 40px;
+    width: 1626px;
+    transition: all 0.5s ease-in-out;
+}
+div:hover {
+    width: 1951px;
+    background-color: tomato;
 }
