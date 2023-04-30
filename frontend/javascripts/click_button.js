@@ -1,6 +1,5 @@
-const jooni_sexy = 5;
-const jooni_cute = 6;
-
-console.log(jooni_sexy + jooni_cute)
-console.log(jooni_sexy * jooni_cute)
-console.log(jooni_sexy / jooni_cute)
+const joonIsSexy = 5;
+const joonIsCute = 6;
+console.log(jooniIsSexy + joonIsCute)
+console.log(joonIsSexy * joonIsCute)
+console.log(joonIsSxy / joonIsCute)
