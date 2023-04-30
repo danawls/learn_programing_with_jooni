@@ -1,1 +1,3 @@
-console.log("i want sex with jooni")
+console.log(5 + 6)
+console.log(5 * 6)
+console.log(5 / 6)
