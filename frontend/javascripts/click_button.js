@@ -1,5 +1,12 @@
-const joonIsSexy = 5;
-const joonIsCute = 6;
-console.log(jooniIsSexy + joonIsCute)
-console.log(joonIsSexy * joonIsCute)
-console.log(joonIsSxy / joonIsCute)
+let jooniIsSexy = 5;
+let jooniIsCute = 6;
+let jooniIsHandsome = "i want him";
+
+console.log(jooniIsSexy + jooniIsCute)
+console.log(jooniIsSexy * jooniIsCute)
+console.log(jooniIsSexy / jooniIsCute)
+console.log(jooniIsHandsome)
+
+jooniIsHandsome = "woojin";
+
+console.log("My name is " + jooniIsHandsome)
