@@ -1,8 +1,23 @@
-const player = {
-    welcomeHello: function(name, age, severName, fat, sexy) {
-        console.log("hello " + name + "! you are " + age + " years old and your sever is " + severName +". and you are " + fat + " and " + sexy + "!")
-    } 
+const cal = {
+    add: function(a, b) {
+        console.log(a + b)
+    },
+    sub: function(a, b) {
+        console.log(a - b)
+    },
+    devide: function(a, b) {
+        console.log(a / b)
+    },
+    multifly: function(a, b) {
+        console.log(a * b)
+    },
+    square: function(a,b) {
+        console.log(a ** b)
+    },
 }
 
-player.welcomeHello("woojin", 12, "joonis Server", "not fat", "you sexy");
-player.welcomeHello("jooni", 12, "woojins Server", "fat", "you are not sexy");
+cal.add(1, 2)
+cal.sub(1, 2)
+cal.devide(1, 2)
+cal.multifly(1, 2)
+cal.square(1, 2)
