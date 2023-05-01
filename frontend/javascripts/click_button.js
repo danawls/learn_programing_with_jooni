@@ -1,17 +1,7 @@
-const player = {
-    name: "sexy boy",
-    point: 1212,
-    sexy: true,
-    fat: "slim",
+function sayHello(name, age){
+    console.log("hello! " + name + ", " + "and you are "  + age + "years old!");
 }
 
-console.log(player.name)
-player.name = "woojin"
-console.log(player.name)
-console.log(player.point)
-player.point = player.point + 2000
-console.log(player.point)
-player.point = player.point + (2000- 1000)
-console.log(player.point)
-
-// xxx.xxx = function
+sayHello("nico", 13);
+sayHello("cool baby", 56);
+sayHello("woojin", 11);
