@@ -1,7 +1,7 @@
-function sayHello(name, age){
-    console.log("hello! " + name + ", " + "and you are "  + age + "years old!");
+const player = {
+    welcomeHello: function(name, age, severName, fat, sexy) {
+        console.log("hello " + name + "! you are " + age + " years old and your sever is " + severName +". and you are" + fat + " and " + sexy + "!")
+    } 
 }
 
-sayHello("nico", 13);
-sayHello("cool baby", 56);
-sayHello("woojin", 11);
+player.welcomeHello("woojin", 12, "joonis Server", "n't fat", "you sexy");
