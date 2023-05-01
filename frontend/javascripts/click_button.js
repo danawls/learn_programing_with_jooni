@@ -1,10 +1,15 @@
-const dayOfWeeks = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"];
+const player = {
+    name: "sexy boy",
+    point: 1212,
+    sexy: true,
+    fat: "slim",
+}
 
-/**write dayOfWeeks */
-console.log(dayOfWeeks[6])
-
-/**add new thing in dayOfWeeks */
-dayOfWeeks.push("children day")
-
-// and write added-dayOfWeeks
-console.log(dayOfWeeks[7])
+console.log(player.name)
+player.name = "woojin"
+console.log(player.name)
+console.log(player.point)
+player.point = player.point + 2000
+console.log(player.point)
+player.point = player.point + (2000- 1000)
+console.log(player.point)
