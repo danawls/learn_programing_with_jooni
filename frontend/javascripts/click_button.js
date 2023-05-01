@@ -1,12 +1,7 @@
-let jooniIsSexy = 5;
-let jooniIsCute = 6;
-let jooniIsHandsome = "i want him";
+let amIFat = true
 
-console.log(jooniIsSexy + jooniIsCute)
-console.log(jooniIsSexy * jooniIsCute)
-console.log(jooniIsSexy / jooniIsCute)
-console.log(jooniIsHandsome)
+console.log(amIFat)
 
-jooniIsHandsome = "woojin";
+amIFat = false
 
-console.log("My name is " + jooniIsHandsome)
+console.log(amIFat)
