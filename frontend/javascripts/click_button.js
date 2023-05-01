@@ -1,10 +1,10 @@
-let amIFat = undefined
-let nothing;
+const dayOfWeeks = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"];
 
-console.log(amIFat)
+/**write dayOfWeeks */
+console.log(dayOfWeeks[6])
 
-amIFat = null
+/**add new thing in dayOfWeeks */
+dayOfWeeks.push("children day")
 
-console.log(amIFat)
-console.log(nothing)
-console.log()
+// and write added-dayOfWeeks
+console.log(dayOfWeeks[7])
