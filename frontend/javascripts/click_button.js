@@ -1,7 +1,7 @@
-let amIFat = true
+let amIFat = undefined
 
 console.log(amIFat)
 
-amIFat = false
+amIFat = null
 
 console.log(amIFat)
