@@ -1,6 +1,6 @@
 const age = parseInt( prompt("How old are you?" ) );
 
-if(isNaN(age) == true) {
+if(isNaN(age) == true || age < 0) {
     console.log("Please write a number");
 } else if(age < 19) {
     console.log("you can drink because you are less than 19 years old.");
