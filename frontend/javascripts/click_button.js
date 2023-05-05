@@ -1,4 +1,9 @@
-const age = parseInt( prompt("How old are you?" ) );
+const howOld = {
+    drinkOld: function(){
+        return parseInt( prompt("How old are you?") )
+    }
+};
+const age = howOld.drinkOld();
 
 if(isNaN(age) == true || age < 0) {
     console.log("Please write a number");
