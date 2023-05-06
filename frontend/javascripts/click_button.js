@@ -1,2 +1,4 @@
-document.title = "mm"
-title.innerText = "apples products"
+const title = document.querySelector(".hello .hello");
+
+title.innerText = "hello babe@!"
+console.log(title);
