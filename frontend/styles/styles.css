@@ -1,3 +1,16 @@
 body {
     background-color: bisque;
 }
+.hello {
+    display: flex;
+    flex-direction: row;
+}
+h1 {
+    width: 600px;
+    color: black;
+    transition: color 0.1s ease-in-out;
+    margin: auto 0;
+}
+h1:hover {
+    color: azure;
+}

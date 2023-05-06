@@ -1,4 +1,4 @@
-const title = document.querySelector(".hello .hello");
+const hellos = document.querySelector(".hello:first-child h1");
 
-title.innerText = "hello babe@!"
-console.log(title);
+hellos.innerText = "This is spy";
+console.log(hellos);
