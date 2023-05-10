@@ -14,9 +14,13 @@ function handleMouseLeave () {
     title.style.color = "brown";
 }
 
+function handleWindowResize () {
+    document.body.style.backgroundColor= "azure";
+}
+
 title.addEventListener("click", handleClick);
 title.addEventListener("mouseenter", handleMouseEnter);
 title.addEventListener("mouseleave", handleMouseLeave);
-
+window.addEventListener("resize", handleWindowResize);
 
 console.dir(title.style.color);
