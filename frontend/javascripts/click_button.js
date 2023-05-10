@@ -1,7 +1,22 @@
-const hellos = document.querySelector(".hello:first-child h1");
+const title = document.querySelector(".hello:first-child h1");
 
-hellos.innerText = "This is spy";
+title.innerText = "This is spy";
 
-hellos.addEventListener("click", )
+function handleClick() {
+    title.style.color = "blue";
+}
 
-console.dir(hellos.style.color);
+function handleMouseEnter () {
+    title.style.color = "red";
+}
+
+function handleMouseLeave () {
+    title.style.color = "brown";
+}
+
+title.addEventListener("click", handleClick);
+title.addEventListener("mouseenter", handleMouseEnter);
+title.addEventListener("mouseleave", handleMouseLeave);
+
+
+console.dir(title.style.color);
