@@ -24,6 +24,10 @@ function handleWindowResize () {
 function handleWindowCopy () {
     alert ("copier!");
 }
+// 오프라인인 사용자에게는 알락으로 경고
+function handleOfflineUser () {
+    alert ("Please connect internet");
+}
 
 /** 1. 클릭했을 때 블루로 변경 2. 호버 상태에서 레드 3. 마우스가 떠나면 브라운으로 변경 */
 title.addEventListener("click", handleClick);
@@ -31,5 +35,6 @@ title.addEventListener("mouseenter", handleMouseEnter);
 title.addEventListener("mouseleave", handleMouseLeave);
 window.addEventListener("resize", handleWindowResize);
 window.addEventListener("copy", handleWindowCopy);
+window.addEventListener("offline", handleOfflineUser);
 
 console.dir(title.style.color);
