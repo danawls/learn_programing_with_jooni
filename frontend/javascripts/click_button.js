@@ -6,11 +6,10 @@ h1.style.fontSize = "100px";
 function handleTitleClick() {
     const clickedClass = "active";
     const font = "sexy-font";
+    h1.classList.toggle(clickedClass);
     if (h1.classList.contains(clickedClass)) {
-        h1.classList.remove(clickedClass, font);
         h1.innerText = "hello";
     } else {
-        h1.classList.add(clickedClass, font);
         h1.innerText = "안녕";
     }
 }
