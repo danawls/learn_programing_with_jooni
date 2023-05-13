@@ -7,6 +7,12 @@ body {
 }
 h1 {
     width: 600px;
-    color: black;
+    color: blue;
     margin: auto 0;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.active {
+    color: tomato;
 }
