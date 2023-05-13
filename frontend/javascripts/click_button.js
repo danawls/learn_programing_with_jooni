@@ -4,10 +4,14 @@ h1.style.cursor = "pointer";
 h1.style.fontSize = "100px";
 
 function handleTitleClick() {
-    if (h1.className === "active") {
-        h1.className = "";
+    const clickedClass = "active";
+    const font = "sexy-font";
+    if (h1.classList.contains(clickedClass)) {
+        h1.classList.remove(clickedClass, font);
+        h1.innerText = "hello";
     } else {
-        h1.className = "active";
+        h1.classList.add(clickedClass, font);
+        h1.innerText = "안녕";
     }
 }
 
