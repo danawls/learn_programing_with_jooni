@@ -2,9 +2,9 @@ const logInForm = document.querySelector("#login-form");
 const logInInput = logInForm.querySelector("#login-input");
 const logInButton = logInForm.querySelector("#login-button");
 
-function handleSubmitLogInButton (dororo) {
-    dororo.preventDefault();
-    console.log(dororo);
+function handleSubmitLogInButton (event) {
+    event.preventDefault()
+    console.log(logInInput.value);
 }
 
 logInForm.addEventListener("submit", handleSubmitLogInButton);
