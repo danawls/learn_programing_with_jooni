@@ -5,8 +5,9 @@ const logInButton = logInForm.querySelector("#login-button");
 
 function handleSubmitLogInButton (event) {
     event.preventDefault();
-    logInInput.classList.toggle("hide");
-    console.log(logInInput.value);
+    const username = logInInput.value;
+    logInForm.classList.add("hide");
+    console.log(username);
 }
 
 logInForm.addEventListener("submit", handleSubmitLogInButton);
