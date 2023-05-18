@@ -3,12 +3,14 @@ const logInInput = logInForm.querySelector("#login-input");
 const logInButton = logInForm.querySelector("#login-button");
 const greet = document.querySelector("#greet");
 
+const HIDE_CLASSNAME = "hide";
+
 function handleSubmitLogInButton (event) {
     event.preventDefault();
     const username = logInInput.value;
-    logInForm.classList.add("hide");
+    logInForm.classList.add(HIDE_CLASSNAME);
     greet.innerText = "hello " + username + "!";
-    greet.classList.remove("hide");
+    greet.classList.remove(HIDE_CLASSNAME);
 }
 
-window.addEventListener("resize", handleSubmitLogInButton);
+logInForm.addEventListener("submit", handleSubmitLogInButton);
