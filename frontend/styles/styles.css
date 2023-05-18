@@ -1,3 +1,11 @@
 .hide {
     display: none;
 }
+
+.font {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.color {
+    color: cadetblue;
+}
