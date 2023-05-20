@@ -6,17 +6,21 @@ const greet = document.querySelector("#greet");
 const HIDE_CLASSNAME = "hide";
 const USERNAME_KEY = "username";
 
-function handleSubmitLogInButton (event) {
+function handleSubmitLogInButton(event) {
     event.preventDefault();
     const username = logInInput.value;
     logInForm.classList.add(HIDE_CLASSNAME);
     localStorage.setItem(USERNAME_KEY, username);
-        greet.innerText = `Hello ${localStorage.getItem(USERNAME_KEY)}!`;
-    greet.classList.remove(HIDE_CLASSNAME);
+    paintGreet(username);
 }
 
-function handleGreetClicked () {
+function handleGreetClicked() {
     navigator.clipboard.writeText(logInInput.value);
+}
+
+function paintGreet(username) {
+    greet.innerText = `Hello ${username}!`;
+    greet.classList.remove(HIDE_CLASSNAME);
 }
 
 const savedUsername = localStorage.getItem(USERNAME_KEY);
@@ -27,8 +31,6 @@ if(savedUsername === null) {
     logInForm.addEventListener("submit", handleSubmitLogInButton);
 } else {
     // Show the greet
-    greet.classList.remove(HIDE_CLASSNAME);
-        greet.innerText = `Hello ${localStorage.getItem(USERNAME_KEY)}!`;
-    greet.classList.remove(HIDE_CLASSNAME);
+    paintGreet(savedUsername);
     greet.addEventListener("click", handleGreetClicked);
 }
