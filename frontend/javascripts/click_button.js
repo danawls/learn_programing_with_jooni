@@ -13,4 +13,10 @@ function handleSubmitLogInButton (event) {
     greet.classList.remove(HIDE_CLASSNAME);
 }
 
+function handleGreetClicked () {
+    navigator.clipboard.writeText(logInInput.value);
+}
+
+
 logInForm.addEventListener("submit", handleSubmitLogInButton);
+greet.addEventListener("click", handleGreetClicked);
