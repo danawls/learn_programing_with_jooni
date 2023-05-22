@@ -12,10 +12,12 @@ function handleSubmitLogInButton(event) {
     logInForm.classList.add(HIDE_CLASSNAME);
     localStorage.setItem(USERNAME_KEY, username);
     paintGreet(username);
+    greet.addEventListener("click", handleGreetClicked);
 }
 
-function handleGreetClicked() {
-    navigator.clipboard.writeText(logInInput.value);
+function handleGreetClicked(copy) {
+    copy = localStorage.getItem("username");
+    navigator.clipboard.writeText(copy);
 }
 
 function paintGreet(username) {
