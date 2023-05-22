@@ -14,14 +14,14 @@ function handleSubmitLogInButton(event) {
     paintGreet();
     greet.addEventListener("click", handleGreetClicked);
 }
-
 function handleGreetClicked(copy) {
-    copy = localStorage.getItem("username");
+    copy = localStorage.getItem(USERNAME_KEY);
     navigator.clipboard.writeText(copy);
 }
 
 function paintGreet() {
-    greet.innerText = `Hello ${savedUsername}!`;
+    const username = localStorage.getItem(USERNAME_KEY);
+    greet.innerText = `Hello ${username}!`;
     greet.classList.remove(HIDE_CLASSNAME);
 }
 
