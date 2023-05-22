@@ -11,7 +11,7 @@ function handleSubmitLogInButton(event) {
     const username = logInInput.value;
     logInForm.classList.add(HIDE_CLASSNAME);
     localStorage.setItem(USERNAME_KEY, username);
-    paintGreet(username);
+    paintGreet();
     greet.addEventListener("click", handleGreetClicked);
 }
 
@@ -20,8 +20,8 @@ function handleGreetClicked(copy) {
     navigator.clipboard.writeText(copy);
 }
 
-function paintGreet(username) {
-    greet.innerText = `Hello ${username}!`;
+function paintGreet() {
+    greet.innerText = `Hello ${savedUsername}!`;
     greet.classList.remove(HIDE_CLASSNAME);
 }
 
@@ -33,6 +33,6 @@ if(savedUsername === null) {
     logInForm.addEventListener("submit", handleSubmitLogInButton);
 } else {
     // Show the greet
-    paintGreet(savedUsername);
+    paintGreet();
     greet.addEventListener("click", handleGreetClicked);
 }
