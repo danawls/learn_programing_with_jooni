@@ -12,7 +12,7 @@ function handleSubmitLogInButton(event) {
     logInForm.classList.add(HIDE_CLASSNAME);
     localStorage.setItem(USERNAME_KEY, username);
     paintGreet(username);
-    greet.addEventListener("click", handleGreetClicked);
+    greet.addEventListener("click", copyName);
 }
 
 function paintGreet(username) {
@@ -20,7 +20,7 @@ function paintGreet(username) {
     greet.classList.remove(HIDE_CLASSNAME);
 }
 
-function handleGreetClicked() {
+function copyName() {
     const copy = localStorage.getItem(USERNAME_KEY);
     navigator.clipboard.writeText(copy);
 }
@@ -34,5 +34,5 @@ if(savedUsername === null) {
 } else {
     // Show the greet
     paintGreet(savedUsername);
-    greet.addEventListener("click", handleGreetClicked);
+    greet.addEventListener("click", copyName);
 }
