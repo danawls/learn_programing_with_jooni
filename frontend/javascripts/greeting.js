@@ -21,7 +21,7 @@ function paintGreet(username) {
 }
 
 function handleGreetClicked() {
-    copy = localStorage.getItem(USERNAME_KEY);
+    const copy = localStorage.getItem(USERNAME_KEY);
     navigator.clipboard.writeText(copy);
 }
 
