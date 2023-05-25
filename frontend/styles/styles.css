@@ -10,6 +10,11 @@
     color: cadetblue;
 }
 
+.size {
+    height: 1080px;
+    width: 1980px;
+}
+
 #greet:hover {
     color: blue;
 }
