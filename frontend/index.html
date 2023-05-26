@@ -1,28 +1,36 @@
 <!DOCTYPE html>
 <html lang="kr">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Momentum</title>
-    <link rel="stylesheet" href="styles/styles.css">
-    <link rel="icon" href="images/main_icon copy 2.png">
-</head>
-<body>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="icon" href="images/main_icon copy 2.png" />
+  </head>
+  <body>
     <form class="hide" id="login-form">
-    <input required maxlength="15" type="text" placeholder="What's your name?" id="login-input">
-    <input type="submit" value="Log In" id="login-button">
-    </form> 
+      <input
+        required
+        maxlength="15"
+        type="text"
+        placeholder="What's your name?"
+        id="login-input"
+      />
+      <input type="submit" value="Log In" id="login-button" />
+    </form>
     <h2 id="clock" class="font">00:00</h2>
     <h1 id="greet" class="hide font color"></h1>
+    <form id="todo-form">
+      <input type="text" placeholder="Write a To-Do and press Enter" required />
+    </form>
+    <ul id="todo-list"></ul>
     <div id="quote">
-        <span class="font">
-        </span>
-        <span class="color">
-        </span>
+      <span class="font"> </span>
+      <span class="color"> </span>
     </div>
     <script src="javascripts/todo.js"></script>
     <script src="javascripts/backgroud-img.js"></script>
     <script src="javascripts/greeting.js"></script>
     <script src="javascripts/clock.js"></script>
     <script src="javascripts/quotes.js"></script>
-</body>
+  </body>
 </html>
