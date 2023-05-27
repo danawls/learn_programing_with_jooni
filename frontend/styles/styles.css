@@ -23,3 +23,12 @@
     cursor: copy;
     display: inline;
 }
+
+.end {
+    display: flex;
+    justify-content: end;
+}
+
+.font-size {
+    font-size: x-large;
+}
