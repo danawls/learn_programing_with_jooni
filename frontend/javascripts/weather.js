@@ -2,4 +2,4 @@ function GeoOk() {}
 
 function GeoError() {}
 
-navigator.geolocation.getCurrentPosition();
+navigator.geolocation.getCurrentPosition(GeoOk, GeoError);
