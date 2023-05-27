@@ -8,3 +8,5 @@ BGImage.src = `images/${chosenImages}`;
 BGImage.classList.add("size");
 
 document.body.appendChild(BGImage);
+
+BGImage.classList.add("b-g-img");
