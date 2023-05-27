@@ -12,12 +12,14 @@ function saveToDos() {
 
 function deleteToDo(event) {
   const toDeleteLi = event.target.parentElement;
-
   toDeleteLi.remove();
+  toDos = toDos.filter((toDo) => toDo.id !== parseInt(toDeleteLi.id));
+  saveToDos();
 }
 
 function paintToDo(newTodo) {
   const li = document.createElement("li");
+  li.id = newTodo.id;
   const span = document.createElement("span");
   span.innerText = newTodo.text;
   span.classList.add("font");
