@@ -8,9 +8,12 @@ function GeoOk(position) {
   fetch(url)
     .then((response) => response.json())
     .then((data) => {
-      const weatherContainer = document.querySelector("#weather");
-      const name = data.name;
-      const weather = data.weather[0].main;
+      const weather = document.querySelector("#weather span:last-child");
+      weather.classList.add("font");
+      const city = document.querySelector("#weather span:first-child");
+      city.classList.add("font");
+      city.innerText = data.name + ",";
+      weather.innerText = data.weather[0].main;
     });
 }
 
