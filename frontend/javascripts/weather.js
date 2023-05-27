@@ -8,15 +8,19 @@ function GeoOk(position) {
   fetch(url)
     .then((response) => response.json())
     .then((data) => {
-      const weather = document.querySelector("#weather span:last-child");
-      weather.classList.add("font");
-      const city = document.querySelector("#weather span:first-child");
-      city.classList.add("font");
-      city.innerText = data.name + ",";
-      weather.innerText = data.weather[0].main;
+      paintWeather(data);
     });
 }
 
 function GeoError() {}
+
+function paintWeather(data) {
+  const weather = document.querySelector("#weather span:last-child");
+  weather.classList.add("font");
+  const city = document.querySelector("#weather span:first-child");
+  city.classList.add("font");
+  city.innerText = `${data.name}/`;
+  weather.innerText = `${data.weather[0].main}/${data.main.temp}˚C`;
+}
 
 navigator.geolocation.getCurrentPosition(GeoOk, GeoError);
