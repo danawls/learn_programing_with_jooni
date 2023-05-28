@@ -7,7 +7,7 @@
 }
 
 .color {
-    color: rgba(255, 255, 230, 255);
+    color: rgba(255, 255, 255, 255);
 }
 
 .size {
@@ -15,17 +15,14 @@
     width: 1980px;
 }
 
-#greet:hover {
-    color: blue;
-}
 
 #greet {
-    justify-content: center;
-    cursor: copy;
+    text-align: center;
+    font-size: 90px;
 }
 
 .font-size {
-    font-size: xx-large;
+    font-size: 90px;
 }
 
 img {
@@ -52,6 +49,7 @@ body {
     justify-content: center;
     margin-top: 50%;
     margin: 0 auto;
+    z-index: 1;
 }
 
 #weather {
@@ -59,9 +57,32 @@ body {
     left: 100%;
     margin-top: 10px;
     margin-left: -10%;
-    z-index: 0;
+    padding: 10px;
+    border-radius: 30px;
 }
 
 .center {
     margin: 0 auto;
+}
+
+#todo-input {
+    border-left-width: 0;
+    border-right-width: 0;
+    border-top-width: 0;
+    border-bottom-width: 1;
+    background: none;
+    outline: none;
+    height: 100px;
+    width: 700px;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+#todo-input::placeholder {
+    color: rgba(255, 255, 255, 100);    
+}
+
+#clock {
+    color: wheat;
 }
