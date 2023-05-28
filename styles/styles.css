@@ -44,7 +44,8 @@ body {
     width: 100vw;
     margin: 0;
     position: relative;
-    background-color: bisque;
+    background-image: url("https: //upload.wikimedia.org/wikipedia/commons/0/09/Portrait_of_a_Proboscis_Monkey.jpg");
+    background-color: gray;
 }
 
 #main {
