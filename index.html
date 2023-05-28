@@ -7,29 +7,37 @@
     <link rel="icon" href="images/main_icon copy 2.png" />
   </head>
   <body>
-    <div id="weather" class="end">
+    <div id="weather">
       <span class="color"></span>
       <span class="color"></span>
     </div>
-    <h2 id="clock" class="font font-size">00:00:00</h2>
-    <form class="hide" id="login-form">
-      <input
-        required
-        maxlength="15"
-        type="text"
-        placeholder="What's your name?"
-        id="login-input"
-      />
-      <input type="submit" value="Log In" id="login-button" />
-    </form>
-    <h1 id="greet" class="hide font color"></h1>
-    <form id="todo-form">
-      <input type="text" placeholder="Write a To-Do and press Enter" required />
-    </form>
-    <ul id="todo-list"></ul>
-    <div id="quote">
-      <span class="font"></span>
-      <span class="color"></span>
+    <div id="main">
+      <h2 id="clock" class="font font-size center">00:00:00</h2>
+      <form class="hide center" id="login-form">
+        <input
+          required
+          maxlength="15"
+          type="text"
+          placeholder="What's your name?"
+          id="login-input"
+          class="center"
+        />
+        <input type="submit" value="Log In" id="login-button" class="center" />
+      </form>
+      <h1 id="greet" class="hide font color center"></h1>
+      <form id="todo-form" class="center">
+        <input
+          type="text"
+          placeholder="Write a To-Do and press Enter"
+          required
+          class="center"
+        />
+      </form>
+      <ul id="todo-list" class="center"></ul>
+      <div id="quote" class="center">
+        <span class="font"></span>
+        <span class="color"></span>
+      </div>
     </div>
     <script src="javascripts/weather.js"></script>
     <script src="javascripts/todo.js"></script>
