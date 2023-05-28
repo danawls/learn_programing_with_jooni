@@ -44,6 +44,7 @@ body {
     width: 100vw;
     margin: 0;
     position: relative;
+    background-color: bisque;
 }
 
 #main {
