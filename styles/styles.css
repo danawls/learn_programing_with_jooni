@@ -22,11 +22,11 @@
 
 #greet {
     text-align: center;
-    font-size: 90px;
+    font-size: 80px;
 }
 
 .font-size {
-    font-size: 90px;
+    font-size: 70px;
 }
 
 img {
@@ -87,8 +87,6 @@ body {
 #todo-input::placeholder {
     color: rgba(255, 255, 255, 100);    
 }
-
-
 
 #clock {
     color: rgba(255, 255, 255, 100);
