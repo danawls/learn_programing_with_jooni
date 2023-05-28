@@ -12,7 +12,9 @@ function GeoOk(position) {
     });
 }
 
-function GeoError() {}
+function GeoError() {
+  alert("We couldn't found your location, Please try again.");
+}
 
 function paintWeather(data) {
   const weather = document.querySelector("#weather span:last-child");
