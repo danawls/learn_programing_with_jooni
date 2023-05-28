@@ -7,7 +7,7 @@
 }
 
 .color {
-    color: rgba(255, 255, 255, 255);
+    color: burlywood;
 }
 
 .size {
@@ -69,20 +69,22 @@ body {
     border-left-width: 0;
     border-right-width: 0;
     border-top-width: 0;
-    border-bottom-width: 1;
+    border-bottom: 2px solid white;
     background: none;
     outline: none;
-    height: 100px;
-    width: 700px;
-    font-size: 50px;
+    height: 95px;
+    width: 530px;
+    font-size: 38px;
     font-family: Arial, Helvetica, sans-serif;
-    
+    color: white;
 }
 
 #todo-input::placeholder {
     color: rgba(255, 255, 255, 100);    
 }
 
+
+
 #clock {
-    color: wheat;
+    color: rgba(255, 255, 255, 100);
 }
