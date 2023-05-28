@@ -19,8 +19,8 @@ function paintWeather(data) {
   weather.classList.add("font");
   const city = document.querySelector("#weather span:first-child");
   city.classList.add("font");
-  city.innerText = `${data.name}/`;
-  weather.innerText = `${data.weather[0].main}/${data.main.temp}˚C`;
+  city.innerText = `${data.name} / `;
+  weather.innerText = `${data.weather[0].main} / ${data.main.temp}˚C`;
 }
 
 navigator.geolocation.getCurrentPosition(GeoOk, GeoError);
