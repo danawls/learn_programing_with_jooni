@@ -7,7 +7,7 @@
 }
 
 .color {
-    color: burlywood;
+    color: blanchedalmond;
 }
 
 .white {
@@ -73,10 +73,10 @@ body {
     border-left-width: 0;
     border-right-width: 0;
     border-top-width: 0;
-    border-bottom: 2px solid white;
+    border-bottom: 3px solid white;
     background: none;
     outline: none;
-    height: 95px;
+    height: 70xpx;
     width: 530px;
     font-size: 38px;
     font-family: Arial, Helvetica, sans-serif;
