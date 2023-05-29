@@ -103,9 +103,11 @@ body {
 #quote {
     position: absolute;
     top: 100vh;
-    margin-top: -15%;
-    justify-content: center;
+    margin-top: -20%;
+    margin-left: auto;
+    margin-right: auto;
     width: 50vw;
+    height: fit-content;
 }
 
 #quote span {
