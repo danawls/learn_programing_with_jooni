@@ -1,53 +1,60 @@
 const quotes = [
   // 1[0]
   {
-    quote: "The man is my favorites",
-    auther: "sexy girls",
+    quote:
+      "Tell me and I forget. Teach me and I remember. Involve me and I learn.",
+    auther: "Benjamin Franklin",
   },
   // 2[1]
   {
-    quote: "Kawaii!!",
-    auther: "ohoht",
+    quote:
+      "The best and most beautiful things in the world cannot be seen or even touched — they must be felt with the heart.",
+    auther: "Helen Keller",
   },
   // 3[2]
   {
-    quote: "i want you, babe",
-    auther: "johnna",
+    quote:
+      "Spread love everywhere you go. Let no one ever come to you without leaving happier.",
+    auther: "Mother Teresa",
   },
   // 4[3]
   {
-    quote: "You can fcumke, sexy rady!",
-    auther: "Extra hots",
+    quote: "When you reach the end of your rope, tie a knot in it and hang on.",
+    auther: "Franklin D. Roosevelt",
   },
   // 5[4]
   {
-    quote: "Least common multiple of 36 and 16 is 144",
-    auther: "new-U-turn",
+    quote:
+      "Many of life's failures are people who did not realize how close they were to success when they gave up.",
+    auther: "Thomas A. Edison",
   },
   // 6[5]
   {
-    quote: "siuuuuuuuuuu!!!!",
-    auther: "Korean-Ronaldo",
+    quote: "The way to get started is to quit talking and begin doing.",
+    auther: "Walt Disney",
   },
   // 7[6]
   {
-    quote: "ahaangggggg",
-    auther: "ahri-dead",
+    quote:
+      "If you really look closely, most overnight successes took a long time.",
+    auther: "Steve Jobs",
   },
   // 8[7]
   {
-    quote: "kick-back",
-    auther: "back-kick",
+    quote:
+      "The real test is not whether you avoid this failure, because you won't. It's whether you let it harden or shame you into inaction, or whether you learn from it; whether you choose to persevere.",
+    auther: "Barack Obama",
   },
   // 9[8]
   {
-    quote: "suck it hard, ohps, I mean icecream, guys, what's you've though?",
-    auther: "_in-fact, i mean....... yeah..... you know it...",
+    quote: "Whether you think you can or you think you can't, you're right.",
+    auther: "Henry Ford",
   },
   // 10[9]
   {
-    quote: "ang ang ang aang agn , aghjhagnagnangna1111",
-    auther: "-ahri-interested",
+    quote:
+      "If you really look closely, most overnight successes took a long time.",
+    auther: "Steve Jobs",
   },
 ];
 
