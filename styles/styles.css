@@ -38,13 +38,13 @@ img {
 }
 
 body {
+    position: fixed;
     display: flex;
     justify-self: center;
     justify-content: center;
     height: 100vh;
     width: 100vw;
     margin: 0;
-    position: relative;
     background-color: gray;
     text-align: center;
 }
