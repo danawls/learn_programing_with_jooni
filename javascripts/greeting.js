@@ -1,7 +1,7 @@
 const logInForm = document.querySelector("#login-form");
 const logInInput = logInForm.querySelector("#login-input");
-const logInButton = logInForm.querySelector("#login-button");
 const greet = document.querySelector("#greet");
+const toHide = document.querySelector("#main");
 
 const HIDE_CLASSNAME = "hide";
 const USERNAME_KEY = "username";
@@ -12,17 +12,11 @@ function handleSubmitLogInButton(event) {
   logInForm.classList.add(HIDE_CLASSNAME);
   localStorage.setItem(USERNAME_KEY, username);
   paintGreet(username);
-  greet.addEventListener("click", copyName);
 }
 
 function paintGreet(username) {
   greet.innerText = `Hello ${username}!`;
   greet.classList.remove(HIDE_CLASSNAME);
-}
-
-function copyName() {
-  const copy = localStorage.getItem(USERNAME_KEY);
-  navigator.clipboard.writeText(copy);
 }
 
 const savedUsername = localStorage.getItem(USERNAME_KEY);
