@@ -80,6 +80,7 @@ body {
 }
 
 #todo-input {
+    ime-mode: disabled;
     border-left-width: 0;
     border-right-width: 0;
     border-top-width: 0;
@@ -97,6 +98,7 @@ body {
 #todo-input::placeholder {
     color: rgba(255, 255, 255, 100);    
 }
+
 
 #clock {
     color: rgba(255, 255, 255, 100);

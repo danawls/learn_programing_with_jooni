@@ -39,6 +39,18 @@
         <span class="in-div"></span>
       </div>
     </div>
+    <script type="text/javascript">
+      const resizable = function (el, factor) {
+        const unit = Number(factor) || 7.7;
+        function resize() {
+          el.style.width = (el.value.length + 1) * unit + "px";
+        }
+        const e = "keyup,keypress,focus,blur,change".split(",");
+        for (const i in e) el.addEventListener(e[i], resize, false);
+        resize();
+      };
+      resizable(document.getElementById("todo_input"), 10);
+    </script>
     <script src="javascripts/weather.js"></script>
     <script src="javascripts/todo.js"></script>
     <script src="javascripts/backgroud-img.js"></script>

@@ -28,5 +28,4 @@ if (savedUsername === null) {
 } else {
   // Show the greet
   paintGreet(savedUsername);
-  greet.addEventListener("click", copyName);
 }
