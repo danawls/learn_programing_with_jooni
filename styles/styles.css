@@ -98,6 +98,7 @@ body {
 }
 
 #todo-input::placeholder {
+    text-transform: capitalize;
     color: rgba(255, 255, 255, 100);
     text-align: center;
 }
