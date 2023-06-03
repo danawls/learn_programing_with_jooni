@@ -38,6 +38,7 @@ img {
 }
 
 body {
+    cursor: default;
     position: fixed;
     display: flex;
     justify-self: center;
