@@ -29,8 +29,7 @@
     font-size: 70px;
 }
 
-img :not(#weather){
-    pointer-events: none;
+img{
     position: fixed;
     object-fit: cover;
     height: 100vh;
@@ -39,6 +38,11 @@ img :not(#weather){
 }
 
 body {
+    user-select: none;
+    pointer-events: none;
+    #todo-input{
+        pointer-events: all;
+    }
     cursor: default;
     position: fixed;
     display: flex;
