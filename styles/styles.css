@@ -29,7 +29,8 @@
     font-size: 70px;
 }
 
-img {
+img :not(#weather){
+    pointer-events: none;
     position: fixed;
     object-fit: cover;
     height: 100vh;
