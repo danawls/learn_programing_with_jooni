@@ -108,17 +108,19 @@ body {
     outline: none;
     height: 50px;
     width: 20vw;
+    padding: 0px;
     font-size: 1.3vw;
     font-weight: normal;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
     user-select: all;
     pointer-events: all;
-    right: 0px;
+
 }
 
 #todo-form {
     right: 0px;
+    padding: none;
 }
 
 #todo-input::placeholder {
