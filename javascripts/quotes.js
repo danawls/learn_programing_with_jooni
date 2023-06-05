@@ -42,7 +42,7 @@ const quotes = [
   // 8[7]
   {
     quote:
-      "The real test is not whether you avoid this failure, because you won't. It's whether you let it harden or shame you into inaction, or whether you learn from it; whether you choose to persevere.",
+      "If you're walking down the right path and you're willing to keep walking, eventually you'll make progress.",
     auther: "Barack Obama",
   },
   // 9[8]
