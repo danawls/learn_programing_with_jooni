@@ -26,22 +26,28 @@
         />
       </form>
       <h1 id="greet" class="hide font color center in-div"></h1>
+    </div>
+    <div id="quote" class="center in-div">
+      <span class="in-div"></span>
+      <span class="in-div"></span>
+    </div>
+    <div id="todo-button-div">
+      <input type="button" id="todo-button" required value="✔️" />
+    </div>
+    <div id="todo-list-div">
+      <input type="button" required id="todo-all-delete-button" value="✔️" />
+      <ul id="todo-list" class="center in-div"></ul>
       <form id="todo-form" class="center in-div">
         <input
           type="text"
           placeholder="Write a To-Do and press Enter"
           required
-          class="center in-div"
           id="todo-input"
           autocomplete="off"
-          title="write any thing waht's you have to do!"
+          title="write any thing what's you have to do!"
+          maxlength="30"
         />
       </form>
-      <ul id="todo-list" class="center in-div"></ul>
-      <div id="quote" class="center in-div">
-        <span class="in-div"></span>
-        <span class="in-div"></span>
-      </div>
     </div>
     <script src="javascripts/weather.js"></script>
     <script src="javascripts/todo.js"></script>

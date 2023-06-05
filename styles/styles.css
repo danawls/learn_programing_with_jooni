@@ -24,10 +24,23 @@
     width: 1980px;
 }
 
+.todo-delete-button {
+    margin: 0px 2px;
+    background-color: white;
+    border-radius: 30%;
+}
+
+.todo-delete-button:hover {
+    background-color: blanchedalmond;
+    border-radius: 20%;
+}
+
 
 #greet {
     text-align: center;
     font-size: 80px;
+    pointer-events: none;
+    user-select: none;
 }
 
 .font-size {
@@ -46,7 +59,6 @@ body {
     cursor: default;
     position: fixed;
     display: flex;
-    justify-self: center;
     justify-content: center;
     height: 100vh;
     width: 100vw;
@@ -58,15 +70,6 @@ body {
 body {
     user-select: none;
     pointer-events: none;
-
-    #todo-input {
-        user-select: all;
-        pointer-events: all;
-    }
-
-    #todo-list {
-        pointer-events: all;
-    }
 }
 
 #main {
@@ -75,7 +78,6 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 50%;
     margin: 0 auto;
     z-index: 1;
     text-align: center;
@@ -104,13 +106,15 @@ body {
     border-bottom: 3px solid white;
     background: none;
     outline: none;
-    cursor: default;
-    height: 70px;
-    width: 40vw;
+    height: 50px;
+    width: 20vw;
     font-size: 36px;
     font-weight: normal;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
+    user-select: all;
+    pointer-events: all;
+    right: 0px;
 }
 
 #todo-input::placeholder {
@@ -119,14 +123,11 @@ body {
     text-transform: capitalize;
     color: rgba(255, 255, 255, 100);
     text-align: center;
-}
-
-#todo-input > :focus, ::placeholder {
-    display: none;
+    font-size: 1.3vw;
 }
 
 #clock {
-    color: rgba(255, 255, 255, 100);
+    color: rgba(255, 255, 255, 1);
 }
 
 
@@ -138,11 +139,11 @@ body {
 
 #quote {
     position: absolute;
-    top: 100vh;
-    margin-top: -22%;
+    align-self: flex-end;
+    margin-bottom: 3vh;
     margin-left: auto;
     margin-right: auto;
-    width: 60vw;
+    width: 80vw;
     height: fit-content;
 }
 
@@ -154,6 +155,10 @@ body {
 }
 
 #login-input {
+    user-select: all;
+    ime-mode: disabled;
+    text-rendering: optimizeLegibility;
+    text-transform: none;
     border-left-width: 0;
     border-right-width: 0;
     border-top-width: 0;
@@ -161,18 +166,91 @@ body {
     background: none;
     outline: none;
     height: 70px;
-    width: 500px;
+    width: 40vw;
     font-size: 36px;
     font-weight: normal;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
+    user-select: all;
+    pointer-events: all;
 }
 
 #login-input::placeholder {
-    color: rgba(255, 255, 255, 100);
+    user-select: none;
+    pointer-events: none;
+    text-transform: capitalize;
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+    font-size: 2.5vw;
 }
 
 form {
     user-select: all;
 
+}
+
+#todo-list span {
+    color: rgba(255, 255, 255, 1);
+    font-size: 20px;
+}
+
+#todo-list {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    pointer-events: all;
+
+}
+
+#todo-list li {
+    border-bottom: 2px solid white;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 20vw;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    display: flex;
+    justify-content: end;
+}
+
+#todo-list-div {
+    display: flex;
+    position: absolute;
+    bottom: 13vh;
+    right: 2vw;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+    text-align: center;
+    height: 50vh;
+}
+
+#todo-button-div {
+    display: flex;
+    position: absolute;
+    bottom: 3vh;
+    right: 2vw;
+}
+
+#todo-button {
+    pointer-events: all;
+    border-radius: 30%;
+    border: 2px solid white;
+    background-color: white;
+    width: 40px;
+    height: 40px;
+}
+
+#todo-button:hover {
+    background: blanchedalmond;
+    border-color: blanchedalmond;
+    border-radius: 20%;
+}
+
+#todo-all-delete-button {
+    width: 20vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
