@@ -26,12 +26,21 @@
 
 .todo-delete-button {
     margin: 0px 2px;
-    background-color: white;
+    background-color: blanchedalmond;
     border-radius: 30%;
+    outline: none;
+}
+
+.todo-delete-button:active {
+    background-color: coral;
+}
+
+.todo-delete-button:focus {
+    background-color: coral;
 }
 
 .todo-delete-button:hover {
-    background-color: blanchedalmond;
+    background-color: coral;
     border-radius: 20%;
 }
 
@@ -103,16 +112,19 @@ body {
     border-left-width: 0;
     border-right-width: 0;
     border-top-width: 0;
-    border-bottom: 3px solid white;
-    background: none;
+    border-bottom: 3px solid coral;
+    background-color: rgba(255, 235, 205, 1);
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    margin-top: 10px;
     outline: none;
     height: 50px;
-    width: 20vw;
+    width: 25.8vw;
     padding: 0px;
     font-size: 1.3vw;
-    font-weight: normal;
+    font-weight: 700;
     font-family: Arial, Helvetica, sans-serif;
-    color: white;
+    color: coral;
     user-select: all;
     pointer-events: all;
 
@@ -127,9 +139,10 @@ body {
     user-select: none;
     pointer-events: none;
     text-transform: capitalize;
-    color: rgba(255, 255, 255, 100);
+    color:coral;
     text-align: center;
     font-size: 1.3vw;
+    font-weight: 700;
 }
 
 #clock {
@@ -196,24 +209,39 @@ form {
 }
 
 #todo-list span {
-    color: rgba(255, 255, 255, 1);
-    font-size: 20px;
+    color: coral;
+    font-size: 1.5vw;
+    font-weight: 700;
 }
 
 #todo-list {
     list-style: none;
     pointer-events: all;
+    overflow-y : auto;
+}
 
+#todo-list::-webkit-scrollbar {
+    width: 10px;
+    background-color: white;
+}
+
+#todo-list::-webkit-scrollbar-thumb{
+    background-color: coral;
+}
+
+#todo-list::-webkit-scrollbar-track {
+    background-color:blanchedalmond;
 }
 
 #todo-list li {
-    border-bottom: 3px solid white;
+    border-bottom: 3px solid coral;
     border-top: none;
     border-left: none;
     border-right: none;
-    width: 20vw;
+    width: 25vw;
+    height: 30px;
     padding-top: 2px;
-    padding-bottom: 2px;
+    padding-bottom: 3px;
     display: flex;
     justify-content: end;
 }
@@ -227,8 +255,8 @@ form {
     justify-content: end;
     align-items: end;
     text-align: center;
-    height: 50vh;
     transition: all;
+    height: 70vh;
 }
 
 #todo-button-div {
@@ -246,6 +274,7 @@ form {
     width: 40px;
     height: 40px;
     transition: all 150ms ease-in-out;
+    outline: none;
 }
 
 #todo-button:hover {
@@ -255,18 +284,19 @@ form {
 
 #todo-all-delete-button {
     pointer-events: all;
-    width: 20vw;
+    width: 25.8vw;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: white;
-    border: 2px solid white;
+    background-color: blanchedalmond;
+    border: 2px solid blanchedalmond;
     padding: 1px;
     border-radius: 10px;
     transition: all 150ms ease-in-out;
+    outline: none;
 }
 
 #todo-all-delete-button:hover {
-    background-color: blanchedalmond;
-    border: 2px solid blanchedalmond;
+    background-color: coral;
+    border: 2px solid coral;
 }
