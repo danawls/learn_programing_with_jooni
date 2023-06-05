@@ -3,7 +3,8 @@ const toDoInput = toDoForm.querySelector("input");
 const toDoList = document.querySelector("#todo-list");
 const body = document.querySelector("body");
 const toDoButton = document.querySelector("#todo-button");
-const toDoDiv = document.querySelector("#todo-list-div");
+const toDoDiv = document.querySelector("#to-hide-div");
+const deleteButton = document.querySelector("#todo-all-delete-button");
 
 const TODO_KEY = "toDos";
 
@@ -56,6 +57,8 @@ function handleToDoCliked() {
 toDoForm.addEventListener("submit", handleToDoSubmit);
 
 toDoButton.addEventListener("click", handleToDoCliked);
+
+deleteButton.addEventListener("click", deleteall);
 
 const savedToDos = localStorage.getItem(TODO_KEY);
 

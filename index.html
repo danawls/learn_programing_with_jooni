@@ -34,21 +34,24 @@
     <div id="todo-button-div">
       <input type="button" id="todo-button" required value="✔️" />
     </div>
-    <div id="todo-list-div" class="hide">
-      <input type="button" required id="todo-all-delete-button" value="✔️" />
-      <ul id="todo-list" class="center in-div"></ul>
-      <form id="todo-form" class="">
-        <input
-          type="text"
-          placeholder="Write a To-Do and press Enter"
-          required
-          id="todo-input"
-          autocomplete="off"
-          title="write any thing what's you have to do!"
-          maxlength="30"
-        />
-      </form>
+    <div id="to-hide-div" class="hide">
+      <div id="todo-list-div">
+        <input type="button" required id="todo-all-delete-button" value="✔️" />
+        <ul id="todo-list" class="center in-div"></ul>
+        <form id="todo-form" class="">
+          <input
+            type="text"
+            placeholder="Write a To-Do and press Enter"
+            required
+            id="todo-input"
+            autocomplete="off"
+            title="write any thing what's you have to do!"
+            maxlength="30"
+          />
+        </form>
+      </div>
     </div>
+
     <script src="javascripts/weather.js"></script>
     <script src="javascripts/todo.js"></script>
     <script src="javascripts/backgroud-img.js"></script>
