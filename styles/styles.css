@@ -205,7 +205,7 @@ form {
 }
 
 #todo-list li {
-    border-bottom: 2px solid white;
+    border-bottom: 3px solid white;
     border-top: none;
     border-left: none;
     border-right: none;

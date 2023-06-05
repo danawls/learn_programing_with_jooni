@@ -50,20 +50,23 @@ function handleToDoSubmit(event) {
   saveToDos();
 }
 
-function handleToDoCliked() {
-  toDoDiv.classList.toggle("hide");
-}
-
 toDoForm.addEventListener("submit", handleToDoSubmit);
 
 toDoButton.addEventListener("click", handleToDoCliked);
+toDoButton.addEventListener("click", secondCliked, { once: true });
 
 deleteButton.addEventListener("click", deleteall);
 
 const savedToDos = localStorage.getItem(TODO_KEY);
 
-if (savedToDos !== null) {
-  const parsedToDos = JSON.parse(savedToDos);
-  toDos = parsedToDos;
-  parsedToDos.forEach(paintToDo);
+function handleToDoCliked() {
+  toDoDiv.classList.toggle("hide");
+}
+
+function secondCliked() {
+  if (localStorage.getItem(TODO_KEY) !== null) {
+    const parsedToDos = JSON.parse(localStorage.getItem(TODO_KEY));
+    toDos = parsedToDos;
+    parsedToDos.forEach(paintToDo);
+  }
 }
