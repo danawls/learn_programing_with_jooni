@@ -25,7 +25,8 @@ function paintToDo(newTodo) {
   span.innerText = newTodo.text;
   span.classList.add("font");
   const button = document.createElement("button");
-  button.innerText = "❌";
+  button.innerText = "✔️";
+  button.classList.add("button-design");
   button.addEventListener("click", deleteToDo);
   li.appendChild(span);
   li.appendChild(button);
@@ -44,6 +45,10 @@ function handleToDoSubmit(event) {
   paintToDo(newToDoObj);
   saveToDos();
 }
+
+function handleplaceholder() {}
+
+toDoForm.addEventListener("click", handleplaceholder);
 
 toDoForm.addEventListener("submit", handleToDoSubmit);
 

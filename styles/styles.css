@@ -2,6 +2,11 @@
     display: none;
 }
 
+.button-design {
+    background-color: transparent;
+    border: none;
+}
+
 .font {
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -38,11 +43,6 @@ img{
 }
 
 body {
-    user-select: none;
-    pointer-events: none;
-    #todo-input{
-        pointer-events: all;
-    }
     cursor: default;
     position: fixed;
     display: flex;
@@ -53,6 +53,20 @@ body {
     margin: 0;
     background-color: gray;
     text-align: center;
+}
+
+body {
+    user-select: none;
+    pointer-events: none;
+
+    #todo-input {
+        user-select: all;
+        pointer-events: all;
+    }
+
+    #todo-list {
+        pointer-events: all;
+    }
 }
 
 #main {
@@ -80,15 +94,17 @@ body {
 }
 
 #todo-input {
+    user-select: all;
     ime-mode: disabled;
     text-rendering: optimizeLegibility;
-    text-transform:none;
+    text-transform: none;
     border-left-width: 0;
     border-right-width: 0;
     border-top-width: 0;
     border-bottom: 3px solid white;
     background: none;
     outline: none;
+    cursor: default;
     height: 70px;
     width: 40vw;
     font-size: 36px;
@@ -98,10 +114,17 @@ body {
 }
 
 #todo-input::placeholder {
+    user-select: none;
+    pointer-events: none;
     text-transform: capitalize;
     color: rgba(255, 255, 255, 100);
     text-align: center;
 }
+
+#todo-input > :focus, ::placeholder {
+    display: none;
+}
+
 #clock {
     color: rgba(255, 255, 255, 100);
 }
@@ -147,4 +170,9 @@ body {
 
 #login-input::placeholder {
     color: rgba(255, 255, 255, 100);
+}
+
+form {
+    user-select: all;
+
 }
