@@ -1,5 +1,6 @@
 :root {
     --main-color: blanchedalmond;
+    --second-color: coral;
 }
 
 .hide {
@@ -16,7 +17,7 @@
 }
 
 .color {
-    color: blanchedalmond;
+    color: var(--main-color);
 }
 
 .white {
@@ -30,24 +31,21 @@
 
 .todo-delete-button {
     margin: 0px 2px;
-    background-color: blanchedalmond;
+    background-color: var(--main-color);
     border-radius: 30%;
+    width: 30px;
     outline: none;
+    transition: all 0.15s ease-in;
 }
 
-.todo-delete-button:active {
-    background-color: coral;
+.todo-delete-button:hover{
+    border-radius: 0.8rem;
+    background-color: var(--second-color);
 }
 
-.todo-delete-button:focus {
-    background-color: coral;
+.center {
+    margin: 0 auto;
 }
-
-.todo-delete-button:hover {
-    background-color: coral;
-    border-radius: 20%;
-}
-
 
 #greet {
     text-align: center;
@@ -85,6 +83,10 @@ body {
     pointer-events: none;
 }
 
+form {
+    user-select: all;
+}
+
 #main {
     position: relative;
     display: flex;
@@ -104,9 +106,7 @@ body {
     width: max-content;
 }
 
-.center {
-    margin: 0 auto;
-}
+
 
 #todo-input {
     user-select: all;
@@ -116,7 +116,7 @@ body {
     border-left-width: 0;
     border-right-width: 0;
     border-top-width: 0;
-    border-bottom: 3px solid coral;
+    border-bottom: 3px solid var(--second-color);
     background-color: rgba(255, 235, 205, 1);
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
@@ -128,10 +128,22 @@ body {
     font-size: 1.3vw;
     font-weight: 700;
     font-family: Arial, Helvetica, sans-serif;
-    color: coral;
+    color: var(--second-color);
     user-select: all;
     pointer-events: all;
+    transition:all 0.2s ease-in-out;
+}
 
+#todo-input:hover{
+    background-color: var(--second-color);
+}
+
+#todo-input:hover::placeholder {
+    color: var(--main-color);
+}
+
+#todo-input:hover {
+    color: var(--main-color);
 }
 
 #todo-form {
@@ -143,7 +155,7 @@ body {
     user-select: none;
     pointer-events: none;
     text-transform: capitalize;
-    color:coral;
+    color:var(--second-color);
     text-align: center;
     font-size: 1.3vw;
     font-weight: 700;
@@ -207,11 +219,6 @@ body {
     font-size: 2.5vw;
 }
 
-form {
-    user-select: all;
-
-}
-
 #todo-list span {
     color: var(--main-color);
     font-size: 1.5vw;
@@ -230,7 +237,7 @@ form {
 }
 
 #todo-list::-webkit-scrollbar-thumb{
-    background-color: coral;
+    background-color: var(--second-color);
 }
 
 #todo-list::-webkit-scrollbar-track {
@@ -242,13 +249,15 @@ form {
     border-top: none;
     border-left: none;
     border-right: none;
-    width: 25vw;
+    width: 25.5vw;
     height: 30px;
     padding-top: 2px;
     padding-bottom: 3px;
     display: flex;
     justify-content: end;
+    transition: all 0.15s ease-in;
 }
+
 
 #todo-list-div {
     display: flex;
@@ -273,8 +282,8 @@ form {
 #todo-button {
     pointer-events: all;
     border-radius: 30%;
-    border: 2px solid white;
-    background-color: white;
+    border: 2px solid var(--main-color);
+    background-color:var(--main-color);
     width: 40px;
     height: 40px;
     transition: all 150ms ease-in-out;
@@ -282,8 +291,8 @@ form {
 }
 
 #todo-button:hover {
-    background: blanchedalmond;
-    border-color: blanchedalmond;
+    background: var(--second-color);
+    border-color: var(--second-color);
 }
 
 #todo-all-delete-button {
@@ -292,8 +301,8 @@ form {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: blanchedalmond;
-    border: 2px solid blanchedalmond;
+    background-color: var(--main-color);
+    border: 2px solid var(--main-color);
     padding: 1px;
     border-radius: 10px;
     transition: all 150ms ease-in-out;
@@ -301,6 +310,6 @@ form {
 }
 
 #todo-all-delete-button:hover {
-    background-color: coral;
-    border: 2px solid coral;
+    background-color: var(--second-color);
+    border: 2px solid var(--second-color);
 }
