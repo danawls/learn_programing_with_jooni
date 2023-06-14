@@ -1,3 +1,7 @@
+:root {
+    --main-color: blanchedalmond;
+}
+
 .hide {
     display: none;
 }
@@ -209,7 +213,7 @@ form {
 }
 
 #todo-list span {
-    color: coral;
+    color: var(--main-color);
     font-size: 1.5vw;
     font-weight: 700;
 }
@@ -222,7 +226,7 @@ form {
 
 #todo-list::-webkit-scrollbar {
     width: 10px;
-    background-color: white;
+    background-color: var(--main-color);
 }
 
 #todo-list::-webkit-scrollbar-thumb{
@@ -230,11 +234,11 @@ form {
 }
 
 #todo-list::-webkit-scrollbar-track {
-    background-color:blanchedalmond;
+    background-color:var(--main-color);
 }
 
 #todo-list li {
-    border-bottom: 3px solid coral;
+    border-bottom: 3px solid var(--main-color);
     border-top: none;
     border-left: none;
     border-right: none;
