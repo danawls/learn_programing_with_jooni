@@ -54,6 +54,7 @@ toDoForm.addEventListener("submit", handleToDoSubmit);
 
 toDoButton.addEventListener("click", handleToDoCliked);
 toDoButton.addEventListener("click", secondCliked, { once: true });
+deleteButton.addEventListener("click", allDelete);
 
 deleteButton.addEventListener("click", deleteall);
 
