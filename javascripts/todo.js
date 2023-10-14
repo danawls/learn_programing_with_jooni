@@ -5,6 +5,8 @@ const body = document.querySelector("body");
 const toDoButton = document.querySelector("#todo-button");
 const toDoDiv = document.querySelector("#to-hide-div");
 const deleteButton = document.querySelector("#todo-all-delete-button");
+const dreDiv = document.querySelector("#dre");
+const allTodos = document.querySelector("#todo-list li");
 
 const TODO_KEY = "toDos";
 
@@ -19,6 +21,10 @@ function deleteToDo(event) {
   toDeleteLi.remove();
   toDos = toDos.filter((toDo) => toDo.id !== parseInt(toDeleteLi.id));
   saveToDos();
+}
+
+function handleToDoCliked() {
+  toDoDiv.classList.toggle("hide");
 }
 
 function paintToDo(newTodo) {
@@ -54,15 +60,10 @@ toDoForm.addEventListener("submit", handleToDoSubmit);
 
 toDoButton.addEventListener("click", handleToDoCliked);
 toDoButton.addEventListener("click", secondCliked, { once: true });
-deleteButton.addEventListener("click", allDelete);
 
-deleteButton.addEventListener("click", deleteall);
+deleteButton.addEventListener("click", deleteTodoAll);
 
 const savedToDos = localStorage.getItem(TODO_KEY);
-
-function handleToDoCliked() {
-  toDoDiv.classList.toggle("hide");
-}
 
 function secondCliked() {
   if (localStorage.getItem(TODO_KEY) !== null) {
