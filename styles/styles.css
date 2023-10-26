@@ -1,6 +1,7 @@
 :root {
-    --main-color: blanchedalmond;
-    --second-color: coral;
+    --background-color: rgba(14, 17, 23, 1);
+    --second-color: rgba(22, 27, 34, 1);
+    --main-color: rgba(35, 134, 54, 1);
 }
 
 .hide {
@@ -46,6 +47,7 @@
 .center {
     margin: 0 auto;
 }
+
 
 #greet {
     text-align: center;
@@ -116,10 +118,8 @@ form {
     border-left-width: 0;
     border-right-width: 0;
     border-top-width: 0;
-    border-bottom: 3px solid var(--second-color);
-    background-color: rgba(255, 235, 205, 1);
-    border-top-left-radius: 1rem;
-    border-top-right-radius: 1rem;
+    background-color: var(--main-color);
+    border-radius: 1rem;
     margin-top: 10px;
     outline: none;
     height: 50px;
@@ -135,7 +135,7 @@ form {
 }
 
 #todo-input:hover{
-    background-color: var(--second-color);
+    background-color:var(--second-color);
 }
 
 #todo-input:hover::placeholder {
@@ -269,7 +269,10 @@ form {
     align-items: end;
     text-align: center;
     transition: all;
-    height: 70vh;
+    padding: 10px;
+    border-radius: 1rem;
+    background-color: var(--background-color);
+    overflow-y: auto;
 }
 
 #todo-button-div {

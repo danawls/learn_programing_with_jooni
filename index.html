@@ -1,61 +1,49 @@
 <!DOCTYPE html>
 <html lang="kr">
-  <head>
-    <meta charset="UTF-8" />
-    <title>The test site.</title>
-    <link rel="stylesheet" href="styles/styles.css" />
-    <link rel="icon" href="images/main_icon copy 2.png" />
-  </head>
-  <body>
-    <div id="weather">
-      <span class="white"></span>
-      <span class="white"></span>
-    </div>
-    <div id="main">
-      <h1 id="clock" class="font font-size center in-div">00:00:00</h1>
-      <form class="hide center hi" id="login-form">
-        <input
-          required
-          maxlength="15"
-          type="text"
-          placeholder="what's your name?"
-          id="login-input"
-          class="center hi"
-          autocomplete="off"
-          title="wirte your name"
-        />
+
+<head>
+  <meta charset="UTF-8" />
+  <title>The test site.</title>
+  <link rel="stylesheet" href="styles/styles.css" />
+  <link rel="icon" href="images/main_icon copy 2.png" />
+</head>
+
+<body>
+  <div id="weather">
+    <span class="white"></span>
+    <span class="white"></span>
+  </div>
+  <div id="main">
+    <h1 id="clock" class="font font-size center in-div">00:00:00</h1>
+    <form class="hide center hi" id="login-form">
+      <input required maxlength="15" type="text" placeholder="what's your name?" id="login-input" class="center hi"
+        autocomplete="off" title="wirte your name" />
+    </form>
+    <h1 id="greet" class="hide font color center in-div"></h1>
+  </div>
+  <div id="quote" class="center in-div">
+    <span class="in-div"></span>
+    <span class="in-div"></span>
+  </div>
+  <div id="todo-button-div">
+    <input type="button" id="todo-button" required value="✔️" />
+  </div>
+  <div id="to-hide-div" class="hide todo-box">
+    <div id="todo-list-div">
+      <input type="button" required id="todo-all-delete-button" value="✔️" />
+      <ul id="todo-list" class="center in-div"></ul>
+      <form id="todo-form" class="">
+        <input type="text" placeholder="Write a To-Do and press Enter" required id="todo-input" autocomplete="off"
+          title="write any thing what's you have to do!" maxlength="25" />
       </form>
-      <h1 id="greet" class="hide font color center in-div"></h1>
     </div>
-    <div id="quote" class="center in-div">
-      <span class="in-div"></span>
-      <span class="in-div"></span>
-    </div>
-    <div id="todo-button-div">
-      <input type="button" id="todo-button" required value="✔️" />
-    </div>
-    <div id="to-hide-div" class="hide">
-      <div id="todo-list-div">
-        <input type="button" required id="todo-all-delete-button" value="✔️" />
-        <ul id="todo-list" class="center in-div"></ul>
-        <form id="todo-form" class="">
-          <input
-            type="text"
-            placeholder="Write a To-Do and press Enter"
-            required
-            id="todo-input"
-            autocomplete="off"
-            title="write any thing what's you have to do!"
-            maxlength="25"
-          />
-        </form>
-      </div>
-    </div>
-    <script src="javascripts/weather.js"></script>
-    <script src="javascripts/todo.js"></script>
-    <script src="javascripts/backgroud-img.js"></script>
-    <script src="javascripts/greeting.js"></script>
-    <script src="javascripts/clock.js"></script>
-    <script src="javascripts/quotes.js"></script>
-  </body>
+  </div>
+  <script src="javascripts/weather.js"></script>
+  <script src="javascripts/todo.js"></script>
+  <script src="javascripts/backgroud-img.js"></script>
+  <script src="javascripts/greeting.js"></script>
+  <script src="javascripts/clock.js"></script>
+  <script src="javascripts/quotes.js"></script>
+</body>
+
 </html>
