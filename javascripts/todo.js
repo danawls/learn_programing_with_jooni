@@ -57,14 +57,22 @@ function handleToDoSubmit(event) {
   saveToDos();
 }
 
+function firstStepOfDeleteAllTodos() {
+  if (localStorage.getItem(TODO_KEY) == null) {
+    alert("There no todos to delete.");
+  } else {
+    deleteTodoAll();
+  }
+}
+
 function deleteTodoAll() {
-  localStorage.removeItem(TODO_KEY);
   if (confirm("Do you realy want to delete all todos?") == true) {
     removeAllchild(toDoBox);
   }
 }
 
 function removeAllchild(div) {
+  localStorage.removeItem(TODO_KEY);
   while (div.hasChildNodes()) {
     div.removeChild(div.firstChild);
   }
@@ -76,7 +84,7 @@ toDoButton.addEventListener("click", handleToDoCliked);
 
 toDoButton.addEventListener("click", secondCliked, { once: true });
 
-deleteButton.addEventListener("click", deleteTodoAll);
+deleteButton.addEventListener("click", firstStepOfDeleteAllTodos);
 
 const savedToDos = localStorage.getItem(TODO_KEY);
 
