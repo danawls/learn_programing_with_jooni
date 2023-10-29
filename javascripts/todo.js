@@ -7,6 +7,7 @@ const toDoDiv = document.querySelector("#to-hide-div");
 const deleteButton = document.querySelector("#todo-all-delete-button");
 const dreDiv = document.querySelector("#dre");
 const allTodos = document.querySelector("#todo-list li");
+const toDoBox = document.querySelector("#todo-list");
 
 const TODO_KEY = "toDos";
 
@@ -56,9 +57,21 @@ function handleToDoSubmit(event) {
   saveToDos();
 }
 
+function deleteTodoAll() {
+  localStorage.removeItem(TODO_KEY);
+  removeAllchild(toDoBox);
+}
+
+function removeAllchild(div) {
+  while (div.hasChildNodes()) {
+    div.removeChild(div.firstChild);
+  }
+}
+
 toDoForm.addEventListener("submit", handleToDoSubmit);
 
 toDoButton.addEventListener("click", handleToDoCliked);
+
 toDoButton.addEventListener("click", secondCliked, { once: true });
 
 deleteButton.addEventListener("click", deleteTodoAll);

@@ -1,6 +1,6 @@
 :root {
-    --background-color: rgba(14, 17, 23, 1);
-    --second-color: rgba(22, 27, 34, 1);
+    --background-color: rgba(27, 27, 27, 1);
+    --second-color: rgba(52, 52, 52, 1);
     --main-color: rgba(35, 134, 54, 1);
 }
 
@@ -272,7 +272,7 @@ form {
     padding: 10px;
     border-radius: 1rem;
     background-color: var(--background-color);
-    overflow-y: auto;
+    max-height: 60vh;
 }
 
 #todo-button-div {
