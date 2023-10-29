@@ -59,7 +59,9 @@ function handleToDoSubmit(event) {
 
 function deleteTodoAll() {
   localStorage.removeItem(TODO_KEY);
-  removeAllchild(toDoBox);
+  if (confirm("Do you realy want to delete all todos?") == true) {
+    removeAllchild(toDoBox);
+  }
 }
 
 function removeAllchild(div) {
