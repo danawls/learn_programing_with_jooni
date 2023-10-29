@@ -110,9 +110,7 @@ form {
     ime-mode: disabled;
     text-rendering: optimizeLegibility;
     text-transform: none;
-    border-left-width: 0;
-    border-right-width: 0;
-    border-top-width: 0;
+    border: 0;
     background-color: var(--main-color);
     border-radius: 1rem;
     margin-top: 10px;
@@ -244,7 +242,7 @@ form {
     border-top: none;
     border-left: none;
     border-right: none;
-    width: 25.5vw;
+    width: 24.5vw;
     height: 30px;
     padding-top: 2px;
     padding-bottom: 3px;
@@ -268,7 +266,8 @@ form {
     padding: 10px;
     border-radius: 1rem;
     background-color: var(--background-color);
-    max-height: 60vh;
+    max-height: 70vh;
+    z-index: 5;
 }
 
 #todo-button-div {
@@ -297,6 +296,7 @@ form {
 #todo-all-delete-button {
     pointer-events: all;
     width: 25.8vw;
+    height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -306,6 +306,7 @@ form {
     border-radius: 10px;
     transition: all 150ms ease-in-out;
     outline: none;
+    font-size: 20px;
 }
 
 #todo-all-delete-button:hover {
