@@ -25,20 +25,6 @@
     color: white;
 }
 
-.phone-font-size{
-    font-size: 500px;
-}
-
-.phone-size{
-    height: 100vh;
-    width: 100vw;
-}
-
-.desktop-size {
-    height: 1080px;
-    width: 1980px;
-}
-
 .todo-delete-button {
     margin: 0px 2px;
     background-color: var(--main-color);
@@ -269,6 +255,7 @@ form {
 
 
 #todo-list-div {
+    width: fit-content;
     display: flex;
     position: absolute;
     bottom: 12vh;
