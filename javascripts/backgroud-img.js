@@ -12,20 +12,16 @@ window.onload = function (event) {
   const innerWidth = window.innerWidth;
   const innerHeight = window.innerHeight;
   innerHeight >= innerWidth
-    ? ((BGImage.src = `images/${phoneChosenImages}`),
-      BGImage.classList.toggle("phone-size desktop-size"))
-    : ((BGImage.src = `images/${desktopChosenImages}`),
-      BGImage.classList.toggle("phone-size desktop-size"));
+    ? (BGImage.src = `images/${phoneChosenImages}`)
+    : (BGImage.src = `images/${desktopChosenImages}`);
 };
 
 window.onresize = function (event) {
   const innerHeight = window.innerHeight;
   const innerWidth = window.innerWidth;
   innerHeight >= innerWidth
-    ? ((BGImage.src = `images/${phoneChosenImages}`),
-      BGImage.classList.toggle("phone-size desktop-size"))
-    : ((BGImage.src = `images/${desktopChosenImages}`),
-      BGImage.classList.toggle("phone-size desktop-size"));
+    ? (BGImage.src = `images/${phoneChosenImages}`)
+    : (BGImage.src = `images/${desktopChosenImages}`);
 };
 
 document.body.appendChild(BGImage);
