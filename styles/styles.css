@@ -112,7 +112,7 @@ form {
     text-transform: none;
     border: 0;
     background-color: var(--main-color);
-    border-radius: 1rem;
+    border-radius: 1.2rem;
     margin-top: 10px;
     outline: none;
     height: 50px;
@@ -303,10 +303,11 @@ form {
     background-color: var(--main-color);
     border: 2px solid var(--main-color);
     padding: 1px;
-    border-radius: 10px;
+    border-radius: 1.2rem;
     transition: all 150ms ease-in-out;
     outline: none;
     font-size: 20px;
+    min-height: 50px;
 }
 
 #todo-all-delete-button:hover {
